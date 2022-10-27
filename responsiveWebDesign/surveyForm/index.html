@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>surveyForm</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Formulário de Marcação de Exames</h1>
+    <p id="description">Preencha com as informações pessoais do paciente</p>
+  </header>
+  <main>
+    <form action="" id="survey-form">
+      <div>
+        <label id="name-label" for="name">Nome <input id="name" type="text" placeholder=" Escreva o Nome Completo"
+            required /></label>
+      </div>
+      <div>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder=" Escreva o Email"
+            required /></label>
+      </div>
+      <div>
+        <label id="number-label" for="number">Idade (opcional) <input type="number" name="number" id="number" min="18"
+            max="120" placeholder=" Selecione a Idade"></label>
+      </div>
+      <div>
+        <p>De qual Hospital você foi encaminhado?</p>
+        <select id="dropdown" required>
+          <option disabled selected value>Escolha o Hospital</option>
+          <option value="HUCFF">Hospital Universitário Clementino Fraga Filho</option>
+          <option value="HMMC">Hospital Municipal Miguel Couto</option>
+        </select>
+      </div>
+      <div>
+        <p>Selecione Seu Gênero Biológico:</p>
+        <label class="radio" for="male">
+          <input type="radio" name="gen" id="male" value="masculino" checked> Masculino
+        </label>
+        <label class="radio" for="female">
+          <input type="radio" name="gen" id="female" value="feminino"> Feminino
+        </label>
+      </div>
+      <div>
+        <p>Selecione os exames a serem marcados
+          <span>(pode-se selecionar mais de um exame):</span>
+        </p>
+        <label class="checkbox" for="exam1">
+          <input type="checkbox" name="exam" id="exam1" value="ecocardiograma"> Ecocardiograma
+        </label>
+        <label class="checkbox" for="exam2">
+          <input type="checkbox" name="exam" id="exam2" value="teste_de_rgometrico"> Teste de Ergométrico
+        </label>
+        <label class="checkbox" for="exam3">
+          <input type="checkbox" name="exam" id="exam3" value="tomografia"> Tomografia
+        </label>
+        <label class="checkbox" for="exam4">
+          <input type="checkbox" name="exam" id="exam4" value="ressonancia_magnética"> Ressonância Magnética
+        </label>
+        <label fclass="checkbox" or="exam5">
+          <input type="checkbox" name="exam" id="exam5" value="eletrocardiograma"> Eletrocardiograma de repouso
+        </label>
+      </div>
+      <div>
+        <p>Caso possua alguma deficiência física, declare abaixo:</p>
+        <label for="deficiency">
+          <textarea name="deficiency" id="deficiency" rows="10">
+          </textarea>
+        </label>
+      </div>
+      <div>
+        <input class="submit-button" type="submit" id="submit" value="Concluir">
+      </div>
+    </form>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
