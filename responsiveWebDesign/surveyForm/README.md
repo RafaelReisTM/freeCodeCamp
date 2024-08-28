@@ -31,7 +31,7 @@ User Stories:
     11- For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field
 
     12- Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from
-    
+
     13- Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
 
     14- Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
@@ -42,5 +42,4 @@ User Stories:
 
 Give it your own personal style. Happy Coding!
 
-Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
-
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS.
